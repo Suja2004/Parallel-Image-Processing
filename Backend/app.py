@@ -869,4 +869,5 @@ if __name__ == '__main__':
     cleanup_thread = threading.Thread(target=cleanup_files, daemon=True)
     cleanup_thread.start()
     logger.info("Starting Enhanced Multi-Result Image Processing Backend")
-    app.run(host='0.0.0.0', port=5000, debug=False, threaded=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=False, threaded=True)
