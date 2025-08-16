@@ -3,7 +3,7 @@ import { Upload, Image, Loader2, Check, X, Info } from "lucide-react";
 import { useDropzone } from "react-dropzone";
 import ImageModal from "./ImageModal";
 import OutputFiles from "./OutputFiles";
-import icon from "./assets/icon.png";
+import icon from "./assets/Icon.png";
 import PresetSelector from "./PresetSelector";
 
 import {
